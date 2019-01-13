@@ -2,6 +2,10 @@
 
 This is an [NPR](https://npr.org) Mac app that sits in your menu bar.
 
+## screenshot
+
+![](https://user-images.githubusercontent.com/97697/51082021-0ab0a900-16cc-11e9-86e5-03050ec9f2b8.png)
+
 ## features
 
 This app allows you to:
