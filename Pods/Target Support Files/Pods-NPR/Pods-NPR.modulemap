@@ -1,6 +1,0 @@
-module Pods_NPR {
-  umbrella header "Pods-NPR-umbrella.h"
-
-  export *
-  module * { export * }
-}
