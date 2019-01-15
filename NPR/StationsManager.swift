@@ -79,9 +79,8 @@ struct Station : Codable {
 
 extension Station {
     public func getPrimaryStream() -> Stream? {
-        guard let streams = self.links.streams else { return nil }
-        
-        var primaryStream = streams.first!
+        guard let streams = self.links.streams, var primaryStream = streams.first else { return nil }
+
         for stream in streams {
             if stream.isPrimaryStream {
                 primaryStream = stream
