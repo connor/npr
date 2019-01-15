@@ -83,10 +83,9 @@ extension Station {
 
         for stream in streams {
             if stream.isPrimaryStream {
-                primaryStream = stream
+               return stream
             }
         }
-        return primaryStream
     }
     
     public func getCurrentlyListeningTitle() -> String? {
