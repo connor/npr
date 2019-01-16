@@ -79,24 +79,17 @@ struct Station : Codable {
 
 extension Station {
     public func getPrimaryStream() -> Stream? {
-        if let streams = self.links.streams {
-            var primaryStream = streams.first!
-            for stream in streams {
-                if stream.isPrimaryStream {
-                    primaryStream = stream
-                    break
-                }
+        guard let streams = self.links.streams, var primaryStream = streams.first else { return nil }
+
+        for stream in streams {
+            if stream.isPrimaryStream {
+               return stream
             }
-            return primaryStream
         }
-        return nil
     }
     
     public func getCurrentlyListeningTitle() -> String? {
-        if let primaryStream = getPrimaryStream() {
-            return primaryStream.title
-        }
-        return nil
+        return getPrimaryStream()?.title
     }
     
     public func getDonateObject() -> Donation? {
