@@ -22,3 +22,7 @@ If you have feedback, please open an issue.
 ## about
 
 Proudly made in Kansas City by [@connor](https://twitter.com/connor).
+
+## download
+
+You can download a copy of the app [here](https://github.com/connor/npr/releases/).
