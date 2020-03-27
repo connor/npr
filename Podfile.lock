@@ -1,4 +1,5 @@
 PODS:
+<<<<<<< HEAD
   - Preferences (0.2.0)
 
 DEPENDENCIES:
@@ -14,3 +15,24 @@ SPEC CHECKSUMS:
 PODFILE CHECKSUM: 28c65abf491f9023da635c5455e31e57152f8894
 
 COCOAPODS: 1.5.3
+=======
+  - MediaKeyTap (2.2.1)
+  - Preferences (0.2.0)
+
+DEPENDENCIES:
+  - MediaKeyTap
+  - Preferences
+
+SPEC REPOS:
+  trunk:
+    - MediaKeyTap
+    - Preferences
+
+SPEC CHECKSUMS:
+  MediaKeyTap: 737434cc2459e5fb9385f7e8974939ee833cd8ec
+  Preferences: ebc036a176a298cde835155c73251173768a2f8d
+
+PODFILE CHECKSUM: ecbabc95da6100762027ad0ed6005b9a52264e18
+
+COCOAPODS: 1.9.0
+>>>>>>> 688ca53... Integrate with MediaKeyTap.

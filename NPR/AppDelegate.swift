@@ -9,6 +9,7 @@
 import Cocoa
 import Preferences
 import AVFoundation
+import MediaKeyTap
 
 public enum NPRMenuItemType:Int {
     case separator
@@ -21,7 +22,7 @@ public enum NPRMenuItemType:Int {
 }
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
+class AppDelegate: NSObject, NSApplicationDelegate, MediaKeyTapDelegate {
     @IBOutlet weak var window: NSWindow!
     var statusBar = NSStatusBar.system
     var isPlaying:Bool = false
@@ -38,12 +39,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     )
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        keyTap = SPMediaKeyTap.init(delegate: self)
-        if keyTap != nil {
-            keyTap?.startWatchingMediaKeys()
-        }
-        
         statusBarItem = statusBar.statusItem(withLength: -1)
+        mediaKeyTap = MediaKeyTap(delegate: self)
+        mediaKeyTap?.start()
         statusBarItem.menu = menu
         statusBarItem.button?.image = NSImage.init(named: "npr-icon")
         statusBarItem.button?.imagePosition = .imageRight
@@ -59,6 +57,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             buildMenu()
         }
     }
+
+    func handle(mediaKey: MediaKey, event: KeyEvent) {
+        if mediaKey == .playPause { didTapPlayPause() }
+    }
+
     
     func generateMenuItemTypes() -> Void {
         var itemTypes:[NPRMenuItemType] = []
@@ -179,23 +182,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 if let currentStationURL = URL.init(string: currentStationBrand.href) {
                     NSWorkspace.shared.open(currentStationURL)
                 }
-            }
-        }
-    }
-    
-    // MARK - SPMediaKeyTap
-    
-    override func mediaKeyTap(_ keyTap: SPMediaKeyTap!, receivedMediaKeyEvent event: NSEvent!) {
-        let keyCode = Int32(((event.data1 & 0xFFFF0000) >> 16))
-        let keyFlags = event.data1 & 0x0000FFFF
-        let keyIsPressed = (((keyFlags & 0xFF00) >> 8)) == 0xA
-        if keyIsPressed {
-            switch (keyCode) {
-            case NX_KEYTYPE_PLAY:
-                toggle()
-                break
-            default:
-                break
             }
         }
     }

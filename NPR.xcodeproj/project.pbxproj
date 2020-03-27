@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		B30773C021E40C5A005357D2 /* NSTextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30773BF21E40C5A005357D2 /* NSTextField+Extensions.swift */; };
+<<<<<<< HEAD
 		B30773C721E40F2B005357D2 /* SPMediaKeyTap.m in Sources */ = {isa = PBXBuildFile; fileRef = B30773C321E40F29005357D2 /* SPMediaKeyTap.m */; };
 		B30773C821E40F2B005357D2 /* SPInvocationGrabbing in Resources */ = {isa = PBXBuildFile; fileRef = B30773C421E40F2A005357D2 /* SPInvocationGrabbing */; };
+=======
+>>>>>>> 688ca53... Integrate with MediaKeyTap.
 		B30773CB21E41B65005357D2 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30773CA21E41B65005357D2 /* AboutViewController.swift */; };
 		B39DC9D421DEC775004D4AA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39DC9D321DEC775004D4AA0 /* AppDelegate.swift */; };
 		B39DC9D621DEC777004D4AA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B39DC9D521DEC777004D4AA0 /* Assets.xcassets */; };
@@ -26,10 +29,13 @@
 		785D33762B5B498312EB51E6 /* Pods-NPR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NPR/Pods-NPR.debug.xcconfig"; sourceTree = "<group>"; };
 		A2577E75BD30208850F23153 /* libPods-NPR.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NPR.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B30773BF21E40C5A005357D2 /* NSTextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTextField+Extensions.swift"; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		B30773C221E40F28005357D2 /* NPR-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NPR-Bridging-Header.h"; sourceTree = "<group>"; };
 		B30773C321E40F29005357D2 /* SPMediaKeyTap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPMediaKeyTap.m; path = "../../../../Downloads/SPMediaKeyTap-master/SPMediaKeyTap.m"; sourceTree = "<group>"; };
 		B30773C421E40F2A005357D2 /* SPInvocationGrabbing */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SPInvocationGrabbing; path = "../../../../Downloads/SPMediaKeyTap-master/SPInvocationGrabbing"; sourceTree = "<group>"; };
 		B30773C521E40F2B005357D2 /* SPMediaKeyTap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPMediaKeyTap.h; path = "../../../../Downloads/SPMediaKeyTap-master/SPMediaKeyTap.h"; sourceTree = "<group>"; };
+=======
+>>>>>>> 688ca53... Integrate with MediaKeyTap.
 		B30773CA21E41B65005357D2 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		B39DC9D021DEC775004D4AA0 /* NPR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NPR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39DC9D321DEC775004D4AA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +83,7 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		B30773C121E40F15005357D2 /* SPMediaKeyTap */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +95,8 @@
 			path = SPMediaKeyTap;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> 688ca53... Integrate with MediaKeyTap.
 		B39DC9C721DEC775004D4AA0 = {
 			isa = PBXGroup;
 			children = (
@@ -109,7 +118,10 @@
 		B39DC9D221DEC775004D4AA0 /* NPR */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				B30773C121E40F15005357D2 /* SPMediaKeyTap */,
+=======
+>>>>>>> 688ca53... Integrate with MediaKeyTap.
 				B30773BE21E40C4C005357D2 /* Extensions */,
 				B39DC9ED21DF05EE004D4AA0 /* StationsManager.swift */,
 				B39DC9D321DEC775004D4AA0 /* AppDelegate.swift */,
@@ -200,7 +212,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B39DC9E421DEC8D8004D4AA0 /* StationsViewController.xib in Resources */,
+<<<<<<< HEAD
 				B30773C821E40F2B005357D2 /* SPInvocationGrabbing in Resources */,
+=======
+>>>>>>> 688ca53... Integrate with MediaKeyTap.
 				B39DC9D621DEC777004D4AA0 /* Assets.xcassets in Resources */,
 				B39DC9E821DEC8F3004D4AA0 /* AboutViewController.xib in Resources */,
 				B39DC9D921DEC777004D4AA0 /* MainMenu.xib in Resources */,
@@ -240,7 +255,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B39DC9EE21DF05EE004D4AA0 /* StationsManager.swift in Sources */,
+<<<<<<< HEAD
 				B30773C721E40F2B005357D2 /* SPMediaKeyTap.m in Sources */,
+=======
+>>>>>>> 688ca53... Integrate with MediaKeyTap.
 				B39DC9D421DEC775004D4AA0 /* AppDelegate.swift in Sources */,
 				B39DC9E321DEC8D8004D4AA0 /* StationsViewController.swift in Sources */,
 				B30773C021E40C5A005357D2 /* NSTextField+Extensions.swift in Sources */,
@@ -394,7 +412,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.connormontgomery.npr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+<<<<<<< HEAD
 				SWIFT_OBJC_BRIDGING_HEADER = "NPR/SPMediaKeyTap/NPR-Bridging-Header.h";
+=======
+>>>>>>> 688ca53... Integrate with MediaKeyTap.
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
@@ -417,7 +438,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.connormontgomery.npr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+<<<<<<< HEAD
 				SWIFT_OBJC_BRIDGING_HEADER = "NPR/SPMediaKeyTap/NPR-Bridging-Header.h";
+=======
+>>>>>>> 688ca53... Integrate with MediaKeyTap.
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
