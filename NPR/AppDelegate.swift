@@ -27,10 +27,10 @@ class AppDelegate: NSObject, NSApplicationDelegate, MediaKeyTapDelegate {
     var statusBar = NSStatusBar.system
     var isPlaying:Bool = false
     var player:AVPlayer = AVPlayer.init()
-    var keyTap:SPMediaKeyTap?
     var statusBarItem:NSStatusItem = NSStatusItem()
     var menu:NSMenu = NSMenu()
     var menuItemTypes:[NPRMenuItemType] = []
+    var mediaKeyTap: MediaKeyTap?
     let preferencesWindowController = PreferencesWindowController(
         viewControllers: [
             StationsViewController(),

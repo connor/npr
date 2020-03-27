@@ -79,21 +79,14 @@ struct Station : Codable {
 
 extension Station {
     public func getPrimaryStream() -> Stream? {
-<<<<<<< HEAD
-        guard let streams = self.links.streams, var primaryStream = streams.first else { return nil }
-=======
         guard let streams = self.links.streams else { return nil }
->>>>>>> 688ca53... Integrate with MediaKeyTap.
 
         for stream in streams {
             if stream.isPrimaryStream {
                return stream
             }
         }
-<<<<<<< HEAD
-=======
         return nil
->>>>>>> 688ca53... Integrate with MediaKeyTap.
     }
     
     public func getCurrentlyListeningTitle() -> String? {
