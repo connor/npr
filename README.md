@@ -2,7 +2,7 @@
 
 This is an [NPR](https://npr.org) Mac app that sits in your menu bar.
 
-## screenshot
+## screenshots
 
 ##### playing
 
@@ -17,8 +17,8 @@ This is an [NPR](https://npr.org) Mac app that sits in your menu bar.
 This app allows you to:
 
 * Stream an NPR audio stream.
-* Toggle play/pause using the macOS media keys.
-* Change the NPR station you want to listen to (it is saved for subsequent runs)
+* Toggle play/pause using the macOS play/pause media keys.
+* Change the NPR station you want to listen to in the Preferences window (it is saved for subsequent runs)
 * ... that's it!
 
 ## feedback
