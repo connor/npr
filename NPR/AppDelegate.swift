@@ -44,7 +44,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, MediaKeyTapDelegate {
         mediaKeyTap?.start()
         statusBarItem.menu = menu
         statusBarItem.button?.image = NSImage.init(named: "npr-icon")
-        statusBarItem.button?.imagePosition = .imageRight
         
         NotificationCenter.default.addObserver(self, selector: #selector(stationDidChange(notification:)), name: .stationChanged, object: nil)
     
