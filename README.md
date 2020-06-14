@@ -32,3 +32,7 @@ Proudly made in Kansas City by [@connor](https://twitter.com/connor).
 ## download
 
 You can download a copy of the app [here](https://github.com/connor/npr/releases/).
+
+## tutorial
+
+I am writing a tutorial on how to re-create this. You can find that [here](https://connor.github.io/blog/building-npr-mac-app-part1/).
