@@ -35,4 +35,4 @@ You can download a copy of the app [here](https://github.com/connor/npr/releases
 
 ## tutorial
 
-I am writing a tutorial on how to re-create this. You can find that [here](https://connor.github.io/blog/building-npr-mac-app-part1/).
+You can find a tutorial, walking you through how I built this [here](https://cnnr.me/blog/building-npr-mac-app-part1/).
